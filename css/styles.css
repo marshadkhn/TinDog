@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Ubuntu&display=swap');
+*{
+    font-family: 'Montserrat';
+}
+#title{
+    background-color: #ff4c68;
+}
+.row h1{
+font-family: 'Ubuntu', sans-serif;
+size: 3rem;
+line-height: 1.5;
+font-weight: bolder;
+color: white;
+}
+.container-fluid{
+    padding: 3% 15%;
+}
+#btn-id{
+    padding-right: 3px;
+}
+
+/* Nav-bar */
+.navbar{
+    padding-bottom: 4.5rem;
+}
+.navbar-brand{
+    
+    font-family: 'Ubuntu';
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.nav-item{
+    padding: 0 18px;
+}
+.nav-link{
+    font-weight: bold;
+}
+
+/* Title image */
+.title-image{
+    width: 60%;
+    transform: rotate(20deg);
+}
+/* features */
+#features{
+
+padding: 7% 15%;
+text-align: center;
+}
+#icons{
+    font-size: 3.5rem;
+    padding-bottom: 10px;
+    color: #ff4c68;
+}
+#icons:hover{
+color: red;
+}
+#features h3{
+    font-family: 'Ubuntu';
+    /* font-weight: bolder; */
+    font-size: 1.9rem;
+}
+#features p{
+    font-weight: bold;
+}
+
+/* testimonials */
+#testimonials{
+  
+    padding: 7% 15%;
+    color: #fff;
+    background-color: #ff4c68;
+    text-align: center;
+
+}
+.em{
+    font-weight: bold;
+}
+.test{
+    line-height: 1.5;
+    font-size: 3rem;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+.testimonials-image{
+    border-radius: 100%;
+    margin: 20px;
+    width: 10%;
+}
+
+/* press */
+#press{
+     background-color: #ff4c68;
+     text-align: center;
+     padding-bottom: 3%;
+}
+#press img{
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+/* Pricing */
+.card-deck{
+    display: flex;
+}
+
+.card-deck{
+    margin: 7% 15%;
+}
+.card{
+    margin: 0 20px;
+}
+.center{
+    text-align: center;
+    margin-top: 2%;
+}
+#pricing h3,h2,p{
+    font-family: 'Ubuntu';
+    font-weight: bold;
+}
+#dan{
+    font-weight: bold;
+}
+
+#cta{
+    text-align: center;
+    background-color: #ff4c68;
+    height: 1.5;
+    padding: 10% 0;
+}
+#cta h3{
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    color: #fff;
+    line-height: 1.5;
+}
+#cta button{
+    margin-top: 2%;
+}
+#cta button:hover{
+    font-weight: bolder;
+}
+
+#footer{
+    background-color: rgb(70, 53, 53);
+    text-align: center;
+    color: #fff;
+    padding: 0.5% 0 0.1% 0;
+}
+#footer a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #ff4c68;
+    padding: 0 2%;
+}
+#footer a:hover{
+    color: white;
+}
