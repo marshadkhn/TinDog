@@ -1,5 +1,5 @@
 
-# TinDog
+<b><h1 style="text-align: center;">TinDog</h1></b>
 
 ## Accepting for hacktoberfest
 This repo is about a web app for dog to date and mate. It's a Tinder for dogs and cats. 
@@ -26,11 +26,22 @@ You can refer to the following articles on **basics of Git and Github and also c
    
  
 ## Project Maintainers
-![marshadkhn](https://github.com/marshadkhn)
-![](https://github.com/kubical12)
-
-## Reach out to me 
-![](https://twitter.com/marshadkhn)
+<table align="center">
+	<tr >
+    <td align="center">
+            <a href="https://github.com/marshadkhn">
+              <img src="https://avatars.githubusercontent.com/u/80325579?v=4" width="100px" alt=""/><br />
+              <sub><b>marshadkhn</b></sub>
+            </a>
+   </td>
+    <td align="center">
+            <a href="https://github.com/kubical12">
+              <img src="https://avatars.githubusercontent.com/u/110725429?v=4" width="100px" alt=""/><br />
+              <sub><b>kubical12</b></sub>
+            </a>
+   </td>
+  </tr>
+</table>
 
 ## :tada: All the best for your amazing contributions
 
