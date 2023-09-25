@@ -30,5 +30,5 @@ git commit -m "<your_commit_message>"
 ```css
 git push -u origin <your_branch_name>
 ```
-8. Create a Pull Request.
+8. Create a Pull Request
 9. Congratulations! 🎉 you've made your contribution.
