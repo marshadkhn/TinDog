@@ -43,7 +43,7 @@ You can refer to the following articles on **basics of Git and Github and also c
   </tr>
 </table>
 
-### Give a ⭐ it's free 😊
+#### Give a ⭐ it's free 😊
 ## :tada: All the best for your amazing contributions
 
 
