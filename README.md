@@ -8,6 +8,7 @@ This repo is about a web app for dog to date and mate. It's a Tinder for dogs an
 * HTML
 * CSS
 * JavaScript
+* Bootstrap
 
 ## :man_technologist: How to get started ?
 You can refer to the following articles on **basics of Git and Github and also contact the Project Mentors, in case you are stuck**
