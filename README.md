@@ -1,7 +1,7 @@
 
 <b><h1 style="text-align: center;">TinDog</h1></b>
 
-## Accepting for hacktoberfest
+## Accepting for hacktoberfest 2023
 This repo is about a web app for dog to date and mate. It's a Tinder for dogs and cats. 
 
 ## Tech used
