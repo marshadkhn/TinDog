@@ -21,6 +21,15 @@ color: white;
 }
 
 /* Nav-bar */
+.btn-close {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+  }
 .navbar{
     padding-bottom: 4.5rem;
 }
