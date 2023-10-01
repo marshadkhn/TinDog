@@ -42,6 +42,10 @@ color: white;
     width: 60%;
     transform: rotate(20deg);
 }
+/* intro */
+#intro button:hover{
+    font-weight: bolder;
+}
 /* features */
 #features{
 
