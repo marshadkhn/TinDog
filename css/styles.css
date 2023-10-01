@@ -97,10 +97,11 @@ color: red;
 /* testimonials */
 #testimonials{
   
-    padding: 7% 15%;
+    padding: 7% 15% 1% 15%;
     color: #fff;
     background-color: #ff4c68;
     text-align: center;
+   
 
 }
 .em{
@@ -108,7 +109,7 @@ color: red;
 }
 .test{
     line-height: 1.5;
-    font-size: 3rem;
+    font-size:30px;
     font-family: 'Montserrat';
     font-weight: bold;
 }
@@ -135,6 +136,10 @@ color: red;
 
 .card-deck{
     margin: 7% 15%;
+}
+.card-deck .card-img-top {
+    height:auto;
+    max-width:100%;
 }
 .card{
     margin: 0 20px;
