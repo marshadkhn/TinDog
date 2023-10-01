@@ -1,158 +1,249 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Ubuntu&display=swap');
-*{
+
+* {
     font-family: 'Montserrat';
 }
-#title{
+
+
+#title {
     background-color: #ff4c68;
 }
-.row h1{
-font-family: 'Ubuntu', sans-serif;
-size: 3rem;
-line-height: 1.5;
-font-weight: bolder;
-color: white;
+
+.row h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: bolder;
+    color: white;
 }
-.container-fluid{
+
+.container-fluid {
     padding: 3% 15%;
 }
-#btn-id{
+
+#btn-id {
     padding-right: 3px;
 }
 
 /* Nav-bar */
-.navbar{
+.navbar {
     padding-bottom: 4.5rem;
 }
-.navbar-brand{
-    
+
+.navbar-brand {
     font-family: 'Ubuntu';
     font-size: 2.5rem;
     font-weight: bold;
 }
-.nav-item{
+
+.nav-item {
     padding: 0 18px;
 }
-.nav-link{
+
+.nav-link {
     font-weight: bold;
 }
 
 /* Title image */
-.title-image{
+.title-image {
     width: 60%;
     transform: rotate(20deg);
 }
-/* features */
-#features{
 
-padding: 7% 15%;
-text-align: center;
+#intro button:hover{
+    font-weight: bolder;
 }
-#icons{
+/* Features */
+#features {
+    padding: 7% 15%;
+    text-align: center;
+}
+
+#icons {
     font-size: 3.5rem;
     padding-bottom: 10px;
     color: #ff4c68;
 }
-#icons:hover{
-color: red;
+
+#icons:hover {
+    color: red;
 }
-#features h3{
+
+#features h3 {
     font-family: 'Ubuntu';
     /* font-weight: bolder; */
     font-size: 1.9rem;
 }
-#features p{
+
+#features p {
     font-weight: bold;
 }
 
-/* testimonials */
-#testimonials{
-  
+/* Testimonials */
+#testimonials {
     padding: 7% 15%;
     color: #fff;
     background-color: #ff4c68;
     text-align: center;
-
 }
-.em{
+
+.em {
     font-weight: bold;
 }
-.test{
+
+.test {
     line-height: 1.5;
     font-size: 3rem;
     font-family: 'Montserrat';
     font-weight: bold;
 }
-.testimonials-image{
+
+.testimonials-image {
     border-radius: 100%;
     margin: 20px;
     width: 10%;
 }
 
-/* press */
-#press{
-     background-color: #ff4c68;
-     text-align: center;
-     padding-bottom: 3%;
+/* Press */
+#press {
+    background-color: #ff4c68;
+    text-align: center;
+    padding-bottom: 3%;
 }
-#press img{
+
+#press img {
     width: 15%;
     margin: 20px 20px 50px;
 }
+
 /* Pricing */
-.card-deck{
+.card-deck {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 4% 10%;
+    gap: 40px;
 }
 
-.card-deck{
-    margin: 7% 15%;
+.card {
+    flex-basis: calc(33.33% - 40px);
+    min-height: 350px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.card{
-    margin: 0 20px;
+
+.card:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
-.center{
+
+.card-img-top {
+    margin: 0 auto;
+    width: 100%;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.center {
     text-align: center;
     margin-top: 2%;
 }
-#pricing h3,h2,p{
+
+#pricing h3, h2, p {
     font-family: 'Ubuntu';
     font-weight: bold;
+    font-size: 1.5rem;
+    font-size: 1.5rem;
 }
-#dan{
+
+#dan {
     font-weight: bold;
 }
 
-#cta{
+
+#cta {
     text-align: center;
     background-color: #ff4c68;
-    height: 1.5;
     padding: 10% 0;
 }
-#cta h3{
+
+#cta h3 {
     font-family: 'Ubuntu';
     font-weight: bold;
     color: #fff;
     line-height: 1.5;
 }
-#cta button{
+
+#cta button {
     margin-top: 2%;
 }
-#cta button:hover{
+
+#cta button:hover {
     font-weight: bolder;
 }
 
-#footer{
+/* Footer */
+#footer {
     background-color: rgb(70, 53, 53);
     text-align: center;
     color: #fff;
     padding: 0.5% 0 0.1% 0;
 }
-#footer a{
+
+#footer a {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 24px;
     color: #ff4c68;
     padding: 0 2%;
 }
-#footer a:hover{
+
+#footer a:hover {
     color: white;
+}
+
+/* Media Queries for different screen size */
+@media (max-width: 991px) {
+
+    .row h1 {
+        font-size: 2rem;
+    }
+    .navbar-brand {
+        font-size: 2rem;
+    }
+    .card {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 767px) {
+    .row h1 {
+        font-size: 1.5rem;
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .card {
+        flex-basis: calc(100% - 20px);
+    }
+    .card-deck {
+        margin: 7% 5%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .card {
+        flex-basis: calc(80% - 20px);
+    }
 }
