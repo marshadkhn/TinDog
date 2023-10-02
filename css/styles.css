@@ -156,7 +156,7 @@ color: red;
 }
 .card .pet-image{
     height: 14rem;
-    
+
 }
 .card img{
     height: 100%;
@@ -178,6 +178,7 @@ color: red;
     font-family: 'Ubuntu';
 }
 /* UI of card body END */
+
 .center{
     text-align: center;
     margin-top: 2%;
