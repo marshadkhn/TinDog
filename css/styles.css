@@ -144,12 +144,40 @@ color: red;
     margin: 7% 15%;
 }
 .card-deck .card-img-top {
-    height:auto;
     max-width:100%;
 }
+
+/* UI of card body START */
 .card{
+    width: 20rem;
     margin: 0 20px;
+    background-color: #f97286;
+    border: #fff;
 }
+.card .pet-image{
+    height: 14rem;
+    
+}
+.card img{
+    height: 100%;
+    object-fit: cover;
+}
+.card-img-top{
+    height: auto;
+}
+.card-body h3{
+    color: rgb(54, 54, 54);
+}
+.card-body h2{
+    color: rgb(0, 100, 0);
+}
+.card-body p{
+    margin: 0;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: 'Ubuntu';
+}
+/* UI of card body END */
 .center{
     text-align: center;
     margin-top: 2%;
@@ -160,6 +188,7 @@ color: red;
 }
 #dan{
     font-weight: bold;
+    margin: 10% 0;
 }
 
 #cta{
