@@ -147,34 +147,40 @@ color: red;
     margin: 4% 10%;
 }
 .card-deck .card-img-top {
-    margin: 0 auto;
-    width: 100%;
-    min-height: 300px;
+    max-width:100%;
+}
+
+/* UI of card body START */
+.card{
+    width: 20rem;
+    margin: 0 20px;
+    background-color: #f97286;
+    border: #fff;
+}
+.card .pet-image{
+    height: 14rem;
+
+}
+.card img{
+    height: 100%;
     object-fit: cover;
 }
-.card{
-    flex-basis: calc(33.33% - 40px);
-    min-height: 350px;
-    max-width: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.card-img-top{
+    height: auto;
 }
-
-.card:hover {
-    transform: scale(1.06);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+.card-body h3{
+    color: rgb(54, 54, 54);
 }
-
-.card-body {
-    text-align: center;
-    flex-grow: 1;
+.card-body h2{
+    color: rgb(0, 100, 0);
 }
+.card-body p{
+    margin: 0;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: 'Ubuntu';
+}
+/* UI of card body END */
 
 .center{
     text-align: center;
@@ -187,6 +193,7 @@ color: red;
 }
 #dan{
     font-weight: bold;
+    margin: 10% 0;
 }
 
 #cta{
