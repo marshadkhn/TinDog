@@ -1,198 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Ubuntu&display=swap");
+* {
+  font-family: "Montserrat";
+}
+* {
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Ubuntu&display=swap');
-*{
-    font-family: 'Montserrat';
+.dark-mode {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark-mode #title {
+  background-color: #000; /* Change the background color for dark mode */
+}
+
+.dark-mode .nav-link {
+  color: #ccc; /* Change the link color for dark mode */
+}
+
+:root {
+  --dur: 0.3s;
+  /*font-size: calc(40px + (80 - 40) * (100vw - 320px) / (2560 - 320));*/
+}
+
+body,
+input {
+  color: hsl(0, 0%, 10%);
+}
+
+.toggle:before,
+.toggle:after {
+  background: hsl(0, 0%, 90%);
+}
+
+.toggle {
+  position: relative;
+}
+
+.toggle:before,
+.toggle:after {
+  position: absolute;
+}
+
+.toggle:before,
+.toggle:after {
+  transition: transform var(--dur);
+}
+
+.toggle:before,
+.toggle:checked:after {
+  transition-timing-function: ease-out;
+}
+
+.toggle {
+  overflow: hidden;
+}
+.sr {
+  color: transparent;
+}
+.toggle {
+  position: relative;
+  background: currentColor;
+  border-radius: 0.75em;
+  cursor: pointer;
+  width: 3em;
+  height: 1.5em;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+.toggle:before,
+.toggle:after {
+  border-radius: 50%;
+  content: "";
+  display: block;
+  top: 0.25em;
+  left: 0.25em;
+  width: 1em;
+  height: 1em;
+}
+
+.toggle:before,
+.toggle:checked:after {
+  transition-delay: 0s;
+}
+.toggle:checked:before,
+.toggle:after {
+  transition-delay: calc(var(--dur) * 0.75);
+  transition-timing-function: cubic-bezier(0.3, 1.6, 0.5, 0.7);
+}
+.toggle:before {
+  transform: translateX(-1.5em);
+}
+.toggle:checked:before {
+  transform: translateX(1.5em);
+}
+.toggle:checked:after {
+  transform: translateX(3em);
+}
+.toggle:checked ~ .curtain {
+  transform: scaleX(1);
+}
+.toggle:focus {
+  outline: transparent;
 }
 
 body::-webkit-scrollbar {
-    width: 1.3rem;
-  }
-  
-body::-webkit-scrollbar-track {
-    background-color: #fff;
-}
-  
-body::-webkit-scrollbar-thumb {
-    background: #ff4c68;
-    border: 5px solid transparent;
-    border-radius: 9px;
-    background-clip: content-box;
+  width: 1.3rem;
 }
 
-#title{
-    background-color: #ff4c68;
+body::-webkit-scrollbar-track {
+  background-color: #fff;
 }
-.row h1{
-font-family: 'Ubuntu', sans-serif;
-size: 3rem;
-line-height: 1.5;
-font-weight: bolder;
-color: white;
+
+body::-webkit-scrollbar-thumb {
+  background: #ff4c68;
+  border: 5px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
 }
-.container-fluid{
-    padding: 3% 15%;
+
+#title {
+  background-color: #ff4c68;
 }
-#btn-id{
-    padding-right: 3px;
+.row h1 {
+  font-family: "Ubuntu", sans-serif;
+  size: 3rem;
+  line-height: 1.5;
+  font-weight: bolder;
+  color: white;
+}
+.container-fluid {
+  padding: 3% 15%;
+}
+#btn-id {
+  padding-right: 3px;
 }
 
 /* Nav-bar */
 .btn-close {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    vertical-align: middle;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 50%;
-  }
-.navbar{
-    padding-bottom: 4.5rem;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
 }
-.navbar-brand{
-    
-    font-family: 'Ubuntu';
-    font-size: 3rem;
-    font-weight: bold;
+.navbar {
+  padding-bottom: 4.5rem;
 }
-.nav-item{
-    padding: 0 18px;
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 3rem;
+  font-weight: bold;
 }
-.nav-link{
-    font-weight: 800 !important;
-    font-size: 1.5rem;
-    color: white !important;
+.nav-item {
+  padding: 0 18px;
+}
+.nav-link {
+  font-weight: 800 !important;
+  font-size: 1rem;
+  color: white !important;
 }
 
-.nav-link:hover{
-    color: rgb(211, 210, 210) !important;
+.nav-link:hover {
+  color: rgb(211, 210, 210) !important;
 }
 
 /* Title image */
-.title-image{
-    width: 60%;
-    transform: rotate(20deg);
+.title-image {
+  width: 60%;
+  transform: rotate(20deg);
 }
 /* intro */
-#intro button:hover{
-    font-weight: bolder;
+#intro {
+  height: 100vh;
+}
+#intro button:hover {
+  font-weight: bolder;
 }
 /* features */
-#features{
-
-padding: 7% 15%;
-text-align: center;
+#features {
+  padding: 7% 15%;
+  text-align: center;
 }
-#icons{
-    font-size: 3.5rem;
-    padding-bottom: 10px;
-    color: #ff4c68;
+#icons {
+  font-size: 3.5rem;
+  padding-bottom: 10px;
+  color: #ff4c68;
 }
-#icons:hover{
-color: red;
+#icons:hover {
+  color: red;
 }
-#features h3{
-    font-family: 'Ubuntu';
-    /* font-weight: bolder; */
-    font-size: 1.9rem;
+#features h3 {
+  font-family: "Ubuntu";
+  /* font-weight: bolder; */
+  font-size: 1.9rem;
 }
-#features p{
-    font-weight: bold;
+#features p {
+  font-weight: bold;
 }
 
 /* testimonials */
-#testimonials{
-  
-    padding: 7% 15% 1% 15%;
-    color: #fff;
-    background-color: #ff4c68;
-    text-align: center;
-   
-
+#testimonials {
+  padding: 7% 15% 1% 15%;
+  color: #fff;
+  background-color: #ff4c68;
+  text-align: center;
 }
-.em{
-    font-weight: bold;
+.em {
+  font-weight: bold;
 }
-.test{
-    line-height: 1.5;
-    font-size:30px;
-    font-family: 'Montserrat';
-    font-weight: bold;
+.test {
+  line-height: 1.5;
+  font-size: 30px;
+  font-family: "Montserrat";
+  font-weight: bold;
 }
-.testimonials-image{
-    border-radius: 100%;
-    margin: 20px;
-    width: 10%;
+.testimonials-image {
+  border-radius: 100%;
+  margin: 20px;
+  width: 10%;
 }
 
 /* press */
-#press{
-     background-color: #ff4c68;
-     text-align: center;
-     padding-bottom: 3%;
+#press {
+  background-color: #ff4c68;
+  text-align: center;
+  padding-bottom: 3%;
 }
-#press img{
-    width: 15%;
-    margin: 20px 20px 50px;
+#press img {
+  width: 15%;
+  margin: 20px 20px 50px;
 }
 /* Pricing */
-.card-deck{
-    display: flex;
+.card-deck {
+  display: flex;
 }
 
-.card-deck{
-    margin: 7% 15%;
+.card-deck {
+  margin: 7% 15%;
 }
 .card-deck .card-img-top {
-    height:auto;
-    max-width:100%;
+  height: auto;
+  max-width: 100%;
 }
-.card{
-    margin: 0 20px;
-}
-.center{
-    text-align: center;
-    margin-top: 2%;
-}
-#pricing h3,h2,p{
-    font-family: 'Ubuntu';
-    font-weight: bold;
-}
-#dan{
-    font-weight: bold;
+.card {
+  margin: 0 20px;
 }
 
-#cta{
-    text-align: center;
-    background-color: #ff4c68;
-    height: 1.5;
-    padding: 10% 0;
-}
-#cta h3{
-    font-family: 'Ubuntu';
-    font-weight: bold;
-    color: #fff;
-    line-height: 1.5;
-}
-#cta button{
-    margin-top: 2%;
-}
-#cta button:hover{
-    font-weight: bolder;
+.dark-mode .card {
+  color: #000; /* Change text color to black for dark mode */
 }
 
-#footer{
-    background-color: rgb(70, 53, 53);
-    text-align: center;
-    color: #fff;
-    padding: 0.5% 0 0.1% 0;
+.center {
+  text-align: center;
+  margin-top: 2%;
 }
-#footer a{
-    text-decoration: none;
-    font-size: 30px;
-    color: #ff4c68;
-    padding: 0 2%;
+#pricing h3,
+h2,
+p {
+  font-family: "Ubuntu";
+  font-weight: bold;
 }
-#footer a:hover{
-    color: white;
+#dan {
+  font-weight: bold;
+}
+
+#cta {
+  text-align: center;
+  background-color: #ff4c68;
+  height: 1.5;
+  padding: 10% 0;
+}
+#cta h3 {
+  font-family: "Ubuntu";
+  font-weight: bold;
+  color: #fff;
+  line-height: 1.5;
+}
+#cta button {
+  margin-top: 2%;
+}
+#cta button:hover {
+  font-weight: bolder;
+}
+
+#footer {
+  background-color: rgb(70, 53, 53);
+  text-align: center;
+  color: #fff;
+  padding: 0.5% 0 0.1% 0;
+}
+#footer a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #ff4c68;
+  padding: 0 2%;
+}
+#footer a:hover {
+  color: white;
 }
