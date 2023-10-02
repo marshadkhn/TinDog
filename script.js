@@ -11,3 +11,14 @@ document.querySelector('.custom-toggler').addEventListener('click', function () 
     }
   });
   
+// Dark Theme
+let themeToggleBtn = document.querySelector('.toggle-theme');
+
+themeToggleBtn.addEventListener('click', () => {
+  if (document.body.classList.contains('dark')) {
+    document.body.classList.remove('dark');
+  } else {
+    document.body.classList.add('dark');
+  }
+  console.log('hello');
+});
