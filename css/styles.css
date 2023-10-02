@@ -138,10 +138,13 @@ color: red;
 /* Pricing */
 .card-deck{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
 }
 
 .card-deck{
-    margin: 7% 15%;
+    margin: 4% 10%;
 }
 .card-deck .card-img-top {
     max-width:100%;
@@ -183,6 +186,7 @@ color: red;
     text-align: center;
     margin-top: 2%;
 }
+
 #pricing h3,h2,p{
     font-family: 'Ubuntu';
     font-weight: bold;
@@ -198,6 +202,7 @@ color: red;
     height: 1.5;
     padding: 10% 0;
 }
+
 #cta h3{
     font-family: 'Ubuntu';
     font-weight: bold;
@@ -225,4 +230,39 @@ color: red;
 }
 #footer a:hover{
     color: white;
+}
+
+/* Media Queries for different screen size */
+@media (max-width: 991px) {
+
+    .row h1 {
+        font-size: 2rem;
+    }
+    .navbar-brand {
+        font-size: 2rem;
+    }
+    .card {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 767px) {
+    .row h1 {
+        font-size: 1.5rem;
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .card {
+        flex-basis: calc(100% - 20px);
+    }
+    .card-deck {
+        margin: 7% 5%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .card {
+        flex-basis: calc(80% - 20px);
+    }
 }
