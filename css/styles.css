@@ -138,22 +138,49 @@ color: red;
 /* Pricing */
 .card-deck{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 40px;
 }
 
 .card-deck{
-    margin: 7% 15%;
+    margin: 4% 10%;
 }
 .card-deck .card-img-top {
-    height:auto;
-    max-width:100%;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 300px;
+    object-fit: cover;
 }
 .card{
-    margin: 0 20px;
+    flex-basis: calc(33.33% - 40px);
+    min-height: 350px;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+.card:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    text-align: center;
+    flex-grow: 1;
+}
+
 .center{
     text-align: center;
     margin-top: 2%;
 }
+
 #pricing h3,h2,p{
     font-family: 'Ubuntu';
     font-weight: bold;
@@ -168,6 +195,7 @@ color: red;
     height: 1.5;
     padding: 10% 0;
 }
+
 #cta h3{
     font-family: 'Ubuntu';
     font-weight: bold;
@@ -195,4 +223,39 @@ color: red;
 }
 #footer a:hover{
     color: white;
+}
+
+/* Media Queries for different screen size */
+@media (max-width: 991px) {
+
+    .row h1 {
+        font-size: 2rem;
+    }
+    .navbar-brand {
+        font-size: 2rem;
+    }
+    .card {
+        flex-basis: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 767px) {
+    .row h1 {
+        font-size: 1.5rem;
+    }
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+    .card {
+        flex-basis: calc(100% - 20px);
+    }
+    .card-deck {
+        margin: 7% 5%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .card {
+        flex-basis: calc(80% - 20px);
+    }
 }
