@@ -124,6 +124,11 @@ body.dark #footer {
     background-color: #162230;
 }
 
+body.dark .card-body h3,
+body.dark .card-body h2{
+    color: #fff;
+}
+
 /* Title image */
 .title-image{
     width: 60%;
