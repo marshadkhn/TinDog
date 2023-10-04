@@ -62,6 +62,19 @@ body::-webkit-scrollbar-thumb {
   color: white !important;
 }
 
+.navLoginBtn{
+  border: 2px solid white;
+  border-radius: 70px;
+  padding: 5px 20px !important;
+  font-size: 20px;
+  background-color: white;
+  color: black !important;
+}
+
+.navLoginBtn:hover{
+ background-color: #ff4c68;
+}
+
 .nav-link:hover {
   color: rgb(211, 210, 210) !important;
 }
@@ -307,8 +320,11 @@ textarea {
   margin: 20px auto 25px auto;
 }
 
-.submit-btn {
+.btn-lrg {
   float: right;
+}
+
+.submit-btn {
   padding: 7px 35px;
   border-radius: 60px;
   display:block;
@@ -402,14 +418,14 @@ input[type="checkbox"]:checked + label {
   color: whitesmoke;
 }
 #face:hover {
-  color: rgb(55, 135, 187);
+  color: rgb(66 103 178);
   font-size: 35px;
 }
 #tweet {
   color: whitesmoke;
 }
 #tweet:hover {
-  color: rgb(48, 154, 224);
+  color: rgb(29 161 242);
   font-size: 35px;
 }
 #mail {
@@ -430,7 +446,7 @@ input[type="checkbox"]:checked + label {
   color: whitesmoke;
 }
 #link:hover {
-  color: rgb(48, 154, 224);
+  color: rgb(10, 102, 194);
   font-size: 35px;
 }
 #insta {
