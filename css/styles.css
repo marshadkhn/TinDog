@@ -1,10 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Ubuntu&display=swap");
 * {
   font-family: "Montserrat";
+  /* overflow-x: auto; */
 }
 
 body::-webkit-scrollbar {
   width: 1.3rem;
+  /* overflow: hidden; */
 }
 
 body::-webkit-scrollbar-track {
@@ -16,6 +18,7 @@ body::-webkit-scrollbar-thumb {
   border: 5px solid transparent;
   border-radius: 9px;
   background-clip: content-box;
+  /* overflow: hidden; */
 }
 
 #title {
@@ -85,6 +88,9 @@ body::-webkit-scrollbar-thumb {
   width: 60%;
   transform: rotate(20deg);
 }
+
+
+
 /* intro */
 #intro button:hover {
   font-weight: bolder;
@@ -342,6 +348,73 @@ textarea {
 .submit-btn:hover {
   transform: translateY(1px);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
+}
+
+
+/* Scroll animation */
+
+section .animate{
+  transition: 1s;
+}
+
+.sec-1 .animate{
+  transform: translateX(-100%);
+}
+
+.sec-1.show-animate .animate{
+  transform: translateX(0);
+}
+
+.sec-2 .animate{
+  transform: translateX(50%);
+}
+
+.sec-2.show-animate .animate{
+  transform: translateX(0);
+  transition: 1s;
+}
+
+.sec-3 .animate{
+  transform: translateY(0);
+}
+
+.sec-3.show-animate .animate{
+  transform: translateY(-80%);
+}
+
+.sec-4 .animate{
+  transform: scale(1);
+}
+
+.sec-4.show-animate .animate{
+  transform: scale(1);
+}
+
+.sec-5 .animate{
+  transform: translateX(0);
+  transition-delay: calc(.2s * var(--i));
+}
+
+.sec-5.show-animate .animate{
+  transform: translateX(-100%);
+}
+
+.sec-6 .animate{
+  transform: translateY(0);
+}
+
+.sec-6.show-animate .animate{
+  transform: translateY(200%);
+}
+
+.sec-7 .animate{
+  opacity: 1;
+  transition: .3s;
+}
+
+.sec-7.show-animate .animate{
+  opacity: 0;
+  transition: 1.5s;
 }
 
 @media (max-width: 768px) {

@@ -13,13 +13,33 @@ document.querySelector('.custom-toggler').addEventListener('click', function () 
   
 
 // Dark Theme
-let themeToggleBtn = document.querySelector('.toggle-theme');
+// let themeToggleBtn = document.querySelector('.toggle-theme');
 
-themeToggleBtn.addEventListener('click', () => {
-  if (document.body.classList.contains('dark')) {
-    document.body.classList.remove('dark');
-  } else {
-    document.body.classList.add('dark');
-  }
-  console.log('hello');
-});
+// themeToggleBtn.addEventListener('click', () => {
+//   if (document.body.classList.contains('dark')) {
+//     document.body.classList.remove('dark');
+//   } else {
+//     document.body.classList.add('dark');
+//   }
+//   console.log('hello');
+// });
+
+
+//Scrolling animations
+
+let Sections = document.querySelectorAll('section');
+window.onscroll = () => {
+  Sections.forEach(sec => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 150;
+    let height = sec.offsetHeight;
+
+    if (top >= offset && top < offset + height) {
+      sec.classList.remove('show-animate');  
+    } else {
+      sec.classList.add('show-animate');
+    }
+  })
+}
+
+
