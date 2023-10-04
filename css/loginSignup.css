@@ -98,6 +98,7 @@ button {
   border-radius: 20px;
   text-transform: uppercase;
   transition: transform 80ms ease-in;
+  cursor: pointer;
 }
 
 input[type="text"],
@@ -142,6 +143,13 @@ button:focus {
 .sign-in-container {
   width: 50%;
   z-index: 2;
+}
+#signIn{
+  cursor: pointer;
+}
+
+#signUp{
+  cursor: pointer;
 }
 
 .sign-up-container {
