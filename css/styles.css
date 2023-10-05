@@ -403,15 +403,6 @@ section .animate{
   transform: translateX(0);
 }
 
-.sec-2 .animate{
-  transform: translateX(50%);
-}
-
-.sec-2.show-animate .animate{
-  transform: translateX(0);
-  transition: 1s;
-}
-
 .sec-3 .animate{
   transform: translateY(0);
 }
@@ -420,13 +411,6 @@ section .animate{
   transform: translateY(-80%);
 }
 
-.sec-4 .animate{
-  transform: scale(1);
-}
-
-.sec-4.show-animate .animate{
-  transform: scale(1);
-}
 
 .sec-5 .animate{
   transform: translateX(0);
@@ -438,22 +422,13 @@ section .animate{
 }
 
 .sec-6 .animate{
-  transform: translateY(0);
+  transform: translateY(-20%);
 }
 
 .sec-6.show-animate .animate{
-  transform: translateY(200%);
+  transform: translateY(100%);
 }
 
-.sec-7 .animate{
-  opacity: 1;
-  transition: .3s;
-}
-
-.sec-7.show-animate .animate{
-  opacity: 0;
-  transition: 1.5s;
-}
 
 @media (max-width: 768px) {
   .submit-btn {
