@@ -41,6 +41,12 @@ You can refer to the following articles on **basics of Git and Github and also c
               <sub><b>kubical12</b></sub>
             </a>
    </td>
+   <td align="center">
+            <a href="https://github.com/pragyamishra56">
+              <img src="https://avatars.githubusercontent.com/u/115208912?v=4" width="100px" alt=""/><br />
+              <sub><b>pragyamishra56</b></sub>
+            </a>
+   </td>
   </tr>
 </table>
 
