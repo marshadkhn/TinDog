@@ -17,7 +17,7 @@
 </head>
 <body>
 
-  <section id="title">
+  <section class="colored-section" id="title">
     <div class="container-fluid">
 
       <!-- Nav Bar  -->
@@ -43,7 +43,7 @@
               <a href="#contact" class="nav-link">Contact us</a>
             </li>
             <li class ="nav-item">
-              <a href="loginSignup.html"  class="nav-link navLoginBtn">Login</a>
+              <a href="loginSignup.html"  class="nav-link navLoginBtn">Signup</a>
            </li>
             </ul>
         </div>
@@ -51,7 +51,7 @@
 
 
       <!-- Title -->
-      <div class="row">
+      <!-- <div class="row">
 
         <div id="intro" class="col-lg-6 mb-5">
           <h1>Meet new and interesting dogs nearby</h1>
@@ -65,13 +65,24 @@
           <img class="title-image" src="images/iphone6.png" alt="iphone-mockup">
         </div>
 
+      </div> -->
+
+      <div class="row first-header">
+        <div class="col-lg-6">
+          <h1 class="big-heading">Meet new and interesting dogs nearby.</h1>
+          <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple"></i> Download</button>
+          <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fa-brands fa-google-play"></i> Download</button>
+        </div>
+        <div class="col-lg-6">
+          <img class="phone-image" src="images/iphone6.png" alt="iphone-mockup">
+        </div>
       </div>
     </div>
   </section>
 
 
   <!-- Features -->
-  <section id="features">
+  <section class="white-section" id="features">
     <div class="row">
       <div class="col-lg-4">
         <a href="#">
@@ -141,13 +152,13 @@
   <!-- Pricing -->
   <section id="pricing">
     <h2 class="center">A Plan for Every Dog's Needs</h2>
-    <p class="center">Simple and affordable price plans for your and your dog.</p>
+    <p class="center">Simple and affordable price plans for your dog.</p>
 
     <div class="card-deck">
 
       <div class="card" style="width: 18rem;">
         <div class="pet-image">
-          <img src="./images/Chihuahua.jpeg" class="card-img-top" alt="...">
+         <a href="./info1.html" target="_blank"><img src="./images/Chihuahua.jpeg" class="card-img-top" alt="..."></a> 
         </div>
         <div class="card-body">
           <h3>Chihuahua</h3>
@@ -161,7 +172,7 @@
 
       <div class="card" style="width: 18rem;">
         <div class="pet-image">
-          <img src="./images/Labrador.jpg" class="card-img-top" alt="...">
+          <a href="./info2.html" target="_blank"><img src="./images/Labrador.jpg" class="card-img-top" alt="..."></a>
         </div>
         <div class="card-body">
           <h3>Labrador</h3>
@@ -175,7 +186,7 @@
 
       <div class="card" style="width: 18rem;">
         <div class="pet-image">
-          <img src="./images/Labrador2.jpg" class="card-img-top" alt="...">
+          <a href="./info3.html" target="_blank"><img src="./images/Labrador2.jpg" class="card-img-top" alt="..."></a>
         </div>
         <div class="card-body">
           <h3>Pitbull</h3>
@@ -195,8 +206,8 @@
   <section id="cta">
 
     <h3>Find the True Love of Your Dog's Life Today.</h3>
-    <button type="button" class="btn btn-dark"><i class="fa-brands fa-apple" id="btn-id"></i>Download</button>
-    <button type="button" class="btn btn-light"><i class="fab fa-google-play" id="btn-id"></i>Download</button>
+    <button type="button" class="btn btn-dark btn-lg download-button"><i class="fa-brands fa-apple" id="btn-id"></i>Download</button>
+    <button type="button" class="btn btn-outline-light btn-lg download-button"><i class="fab fa-google-play" id="btn-id"></i>Download</button>
 
 
   </section>
@@ -236,7 +247,12 @@
             </div>
           </div>
           <div class="col-xs-12">
-            <div class="btn-lrg submit-btn">Send Message</div>
+            <div class="btn-lrg submit-btn" style="--clr:#ff6464">
+              <i></i>
+              <span>
+                Send message
+              </span>
+               </div>
           </div>
       </div>
     </div>
@@ -250,7 +266,7 @@
     <a href="#"><i class="fa-brands fa-facebook" id="face"></i></a>
     <a href="#"><i class="fa-brands fa-x-twitter" id="tweet"></i></a>
     <a href="#"><i class="fa-solid fa-envelope" id="mail"></i></a>
-    <a href="#"><i class="fa-brands fa-github" id="git"></i></a>
+    <a href="https://github.com/marshadkhn/TinDog"><i class="fa-brands fa-github" id="git"></i></a>
     <a href="#"><i class="fa-brands fa-linkedin" id="link"></i></a>
     <a href="#"><i class="fa-brands fa-instagram" id="insta"></i></i></a>
     <p>© Copyright TinDog</p>
@@ -263,4 +279,3 @@
 <script src="https://kit.fontawesome.com/6d2226036d.js" crossorigin="anonymous"></script>
 </body>
 </html>
-
