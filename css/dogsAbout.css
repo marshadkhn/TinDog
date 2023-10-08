@@ -14,7 +14,7 @@ body{
 
 #container{
     width: 60%;
-    height: 60%;
+    height: auto;
     padding: 5%;
     background-color: #ff4c68;
     border-radius: 20px;
