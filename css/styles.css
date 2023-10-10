@@ -256,6 +256,10 @@ body::-webkit-scrollbar-thumb {
 .card .pet-image {
   height: 14rem;
 }
+.card .pet-image:hover {
+  box-shadow: #f00;
+}
+
 .card img {
   height: 100%;
   object-fit: cover;

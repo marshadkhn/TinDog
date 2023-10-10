@@ -155,6 +155,17 @@ body::-webkit-scrollbar-thumb {
 .card .pet-image {
   height: 14rem;
 }
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add a smooth transition effect */
+}
+
+.card:hover {
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+
+
 .card img {
   height: 100%;
   object-fit: cover;
