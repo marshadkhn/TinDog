@@ -115,11 +115,8 @@ body::-webkit-scrollbar-thumb {
 
 /* Image Section */
 .phone-image {
-  width: 23%;
-  transform: rotate(25deg);
-  position: absolute;
-  right: 23%;
-  z-index: auto;
+  width: 60%;
+    transform: rotate(20deg);
 }
 @media (max-width: 1085px) {
   .phone-image {
