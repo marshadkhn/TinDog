@@ -255,7 +255,6 @@ textarea:focus ~ label,
 input:valid ~ label,
 textarea:valid ~ label {
   font-size: 0.75em;
-  color: #999;
   top: -5px;
   -webkit-transition: all 0.225s ease;
   transition: all 0.225s ease;
@@ -267,6 +266,15 @@ textarea:valid ~ label {
   margin: 1rem 0;
   position: relative;
   border-radius: 4px;
+}
+.styled-input input{
+  background-color:#ff4c68;
+}
+.styled-input .label_text{
+  color: white;
+}
+.styled-input textarea{
+  background-color:#ff4c68; ;
 }
 
 @media only screen and (max-width: 768px) {
@@ -342,8 +350,9 @@ textarea {
 
 .submit-btn:hover {
   transform: translateY(1px);
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.9);
 }
+
 
 @media (max-width: 768px) {
   .submit-btn {
