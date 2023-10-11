@@ -14,6 +14,7 @@ body {
   min-height: 100vh;
   background-image: url("https://img.wallpapersafari.com/desktop/1600/900/52/40/k8YoNW.jpg");
   background-size: cover;
+  cursor:pointer;
 }
 
 h1 {
@@ -52,6 +53,7 @@ a {
   width: 768px;
   max-width: 100%;
   opacity: 0.8;
+  cursor: pointer;
 }
 
 .form-container {
