@@ -496,3 +496,9 @@ background: #af3a50;
   transform: scale(1.1); 
   transition: transform 0.3s;
 }
+
+.btn-dark:hover {
+  color: black;
+  background-color: white;  
+  border: white;
+}
