@@ -19,6 +19,7 @@ body {
 h1 {
   font-size: 30px;
   font-weight: 800;
+  text-transform: uppercase;
   font-family: "Roboto", sans-serif;
 }
 
@@ -43,6 +44,7 @@ a {
   text-decoration: none;
   margin: 15px 0;
 }
+
 
 .container {
   position: absolute;
@@ -78,6 +80,14 @@ a {
   margin: 0 5px;
   height: 40px;
   width: 40px;
+  transition: 0.5s;
+}
+.social-container a:hover{
+  color:  white;
+  transform: translateY(-5px);
+  box-shadow: 2px 2px 20px 5px #ff4c68;
+  
+ 
 }
 
 .form-container input {
