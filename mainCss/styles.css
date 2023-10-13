@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Ubuntu&display=swap");
+
 * {
   font-family: "Montserrat";
 }
@@ -23,6 +24,7 @@ body::-webkit-scrollbar-thumb {
 #title {
   background-color: #ff4c68;
 }
+
 .row h1 {
   font-family: "Ubuntu", sans-serif;
   size: 3rem;
@@ -30,12 +32,11 @@ body::-webkit-scrollbar-thumb {
   font-weight: bolder;
   color: white;
 }
+
 /* .container-fluid {
   padding: 1% 5%;
 } */
-.navbar {
-  padding: 1% 3%;
-}
+
 .first-header {
   padding: 3% 10%;
 }
@@ -54,17 +55,21 @@ body::-webkit-scrollbar-thumb {
   background-position: center;
   background-size: 50%;
 }
+
 .navbar {
   padding-bottom: 4.5rem;
 }
+
 .navbar-brand {
   font-family: "Ubuntu";
   font-size: 3rem;
   font-weight: bold;
 }
+
 .nav-item {
   padding: 0 18px;
 }
+
 .nav-link {
   font-weight: 800 !important;
   font-size: 1.5rem;
@@ -81,28 +86,34 @@ body::-webkit-scrollbar-thumb {
   width: 60%;
   transform: rotate(20deg);
 }
+
 /* intro */
 #intro button:hover {
   font-weight: bolder;
 }
+
 /* features */
 #features {
   padding: 7% 15%;
   text-align: center;
 }
+
 #icons {
   font-size: 3.5rem;
   padding-bottom: 10px;
   color: #ff4c68;
 }
+
 #icons:hover {
   color: red;
 }
+
 #features h3 {
   font-family: "Ubuntu";
   /* font-weight: bolder; */
   font-size: 1.9rem;
 }
+
 #features p {
   font-weight: bold;
 }
@@ -114,15 +125,18 @@ body::-webkit-scrollbar-thumb {
   background-color: #ff4c68;
   text-align: center;
 }
+
 .em {
   font-weight: bold;
 }
+
 .test {
   line-height: 1.5;
   font-size: 30px;
   font-family: "Montserrat";
   font-weight: bold;
 }
+
 .testimonials-image {
   border-radius: 100%;
   margin: 20px;
@@ -135,10 +149,12 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
   padding-bottom: 3%;
 }
+
 #press img {
   width: 15%;
   margin: 20px 50px 50px;
 }
+
 /* Pricing */
 .card-deck {
   display: flex;
@@ -150,6 +166,7 @@ body::-webkit-scrollbar-thumb {
 .card-deck {
   margin: 4% 10%;
 }
+
 .card-deck .card-img-top {
   max-width: 100%;
 }
@@ -161,11 +178,14 @@ body::-webkit-scrollbar-thumb {
   background-color: #f97286;
   border: #fff;
 }
+
 .card .pet-image {
   height: 14rem;
 }
+
 .card {
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add a smooth transition effect */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  /* Add a smooth transition effect */
 }
 
 .card:hover {
@@ -179,21 +199,26 @@ body::-webkit-scrollbar-thumb {
   height: 100%;
   object-fit: cover;
 }
+
 .card-img-top {
   height: auto;
 }
+
 .card-body h3 {
   color: rgb(54, 54, 54);
 }
+
 .card-body h2 {
   color: rgb(0, 100, 0);
 }
+
 .card-body p {
   margin: 0;
   font-weight: normal;
   font-size: 13px;
   font-family: "Ubuntu";
 }
+
 /* UI of card body END */
 
 .center {
@@ -207,6 +232,7 @@ p {
   font-family: "Ubuntu";
   font-weight: bold;
 }
+
 #dan {
   font-weight: bold;
   margin: 10% 0;
@@ -225,9 +251,11 @@ p {
   color: #fff;
   line-height: 1.5;
 }
+
 #cta button {
   margin-top: 2%;
 }
+
 #cta button:hover {
   font-weight: bolder;
 }
@@ -252,10 +280,10 @@ h4 {
 
 /* ///// inputs /////*/
 
-input:focus ~ label,
-textarea:focus ~ label,
-input:valid ~ label,
-textarea:valid ~ label {
+input:focus~label,
+textarea:focus~label,
+input:valid~label,
+textarea:valid~label {
   font-size: 0.75em;
   color: #999;
   top: -5px;
@@ -309,8 +337,8 @@ textarea:focus {
   outline: 0;
 }
 
-input:focus ~ span,
-textarea:focus ~ span {
+input:focus~span,
+textarea:focus~span {
   width: 100%;
   -webkit-transition: all 0.075s ease;
   transition: all 0.075s ease;
@@ -355,12 +383,12 @@ textarea {
   }
 }
 
-input[type="checkbox"] + label {
+input[type="checkbox"]+label {
   color: #ccc;
   font-style: italic;
 }
 
-input[type="checkbox"]:checked + label {
+input[type="checkbox"]:checked+label {
   color: #f00;
   font-style: normal;
 }
@@ -371,12 +399,14 @@ input[type="checkbox"]:checked + label {
   color: #fff;
   padding: 0.5% 0 0.1% 0;
 }
+
 #footer a {
   text-decoration: none;
   font-size: 30px;
   color: #ff4c68;
   padding: 0 2%;
 }
+
 #footer a:hover {
   color: white;
 }
@@ -387,12 +417,15 @@ input[type="checkbox"]:checked + label {
   .row h1 {
     font-size: 2rem;
   }
+
   .navbar-brand {
     font-size: 2rem;
   }
+
   .card {
     flex-basis: calc(50% - 20px);
   }
+
   .title-image {
     padding-bottom: 5.4%;
   }
@@ -402,12 +435,15 @@ input[type="checkbox"]:checked + label {
   .row h1 {
     font-size: 1.5rem;
   }
+
   .navbar-brand {
     font-size: 1.5rem;
   }
+
   .card {
     flex-basis: calc(100% - 20px);
   }
+
   .card-deck {
     margin: 7% 5%;
   }
@@ -420,79 +456,98 @@ input[type="checkbox"]:checked + label {
 }
 
 footer {
-   background-color: #ff4c68;
-            padding: 20px;
-            text-align: center;
-        }
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .footer-text {
-            text-align: left;
-            color: white;
-        }
-        .footer-links {
-            text-align:left;
-            /* color:#85071c; */
-        }
-        .footer-text p {
-            font-size: 18px;
-        }
-        .footer-links a {
-            /* color: #333;  */
-            text-decoration: none;
-            margin: 10px;
-        }
-        ul {
-          list-style: none;
-      }  
-      .custom a{
-        font-size: 30px;
-        margin-right: 5px;
-      } 
-      .custom-list .custom-links {
-         color: white;
-         font-size: 20px;
-    }
-    .custom-list .custom-links:hover{
-      color: lightgray;
- }
- .custom-list .custom-links i {
-  font-size: 24px; 
-  margin-right: 5px; 
+  background-color: #ff4c68;
+  padding: 20px;
+  text-align: center;
 }
-.custom a {
-  margin-right: 10px; 
-}
-.custom a.fab.fa-github {
-  color: black; 
-}
-.custom a.fas.fa-envelope{
-  color:#857f7f
-}
-.custom a.fab.fa-linkedin{
-  color:#0077B5;
-}
-.custom a.fab.fa-linkedin:hover {
-  color: #031d2e;}
 
-  .custom a.fab.fa-instagram{
-  background: linear-gradient(90deg, #E4405F, #405DE6); 
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  text-align: left;
+  color: white;
+}
+
+.footer-links {
+  text-align: left;
+  /* color:#85071c; */
+}
+
+.footer-text p {
+  font-size: 18px;
+}
+
+.footer-links a {
+  /* color: #333;  */
+  text-decoration: none;
+  margin: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+.custom a {
+  font-size: 30px;
+  margin-right: 5px;
+}
+
+.custom-list .custom-links {
+  color: white;
+  font-size: 20px;
+}
+
+.custom-list .custom-links:hover {
+  color: lightgray;
+}
+
+.custom-list .custom-links i {
+  font-size: 24px;
+  margin-right: 5px;
+}
+
+.custom a {
+  margin-right: 10px;
+}
+
+.custom a.fab.fa-github {
+  color: black;
+}
+
+.custom a.fas.fa-envelope {
+  color: #857f7f
+}
+
+.custom a.fab.fa-linkedin {
+  color: #0077B5;
+}
+
+.custom a.fab.fa-linkedin:hover {
+  color: #031d2e;
+}
+
+.custom a.fab.fa-instagram {
+  background: linear-gradient(90deg, #E4405F, #405DE6);
   display: inline-block;
   color: #FFFFFF;
   text-decoration: none;
   border-radius: 5px;
 }
-.custom a.fab.fa-instagram:hover{
-background: #af3a50; 
-            color: #FFFFFF; 
-        }
-.custom a:hover {
-  transform: scale(1.2); 
+
+.custom a.fab.fa-instagram:hover {
+  background: #af3a50;
+  color: #FFFFFF;
 }
+
+.custom a:hover {
+  transform: scale(1.2);
+}
+
 .custom-list li:hover {
-  transform: scale(1.1); 
+  transform: scale(1.1);
   transition: transform 0.3s;
 }
