@@ -55,19 +55,20 @@ body::-webkit-scrollbar-thumb {
   background-size: 50%;
 }
 .navbar {
-  padding-bottom: 4.5rem;
+  padding-bottom: 1rem;
 }
 .navbar-brand {
   font-family: "Ubuntu";
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 .nav-item {
-  padding: 0 18px;
+  padding: 0 12px;
 }
+
 .nav-link {
   font-weight: 800 !important;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: white !important;
 }
 
@@ -75,6 +76,34 @@ body::-webkit-scrollbar-thumb {
   color: rgb(211, 210, 210) !important;
 }
 
+
+/* home colored area */
+.home-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between !important;
+}
+.home-text-div{
+  width: 60%;
+  margin-left: 25px;
+  flex-wrap: nowrap;
+  margin-top: 110px !important;
+}
+
+.home-text{
+  font-size: 60px;
+}
+
+.home-image-div{
+  position: relative;
+  margin-left: 40px !important;
+
+}
+.home-image{
+  width: 360px;
+  height: 93%;
+
+}
 
 /* Title image */
 .title-image {
