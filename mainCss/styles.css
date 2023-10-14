@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Ubuntu&display=swap");
 * {
   font-family: "Montserrat";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body::-webkit-scrollbar {
@@ -62,17 +65,43 @@ body::-webkit-scrollbar-thumb {
   font-size: 3rem;
   font-weight: bold;
 }
-.nav-item {
-  padding: 0 18px;
-}
-.nav-link {
-  font-weight: 800 !important;
-  font-size: 1.5rem;
-  color: white !important;
+
+.nav-item{
+  margin-left: 35px;
 }
 
-.nav-link:hover {
-  color: rgb(211, 210, 210) !important;
+.nav-link {
+  display: inline-block;
+  font-weight: 800 !important;
+  font-size: 1.5rem;
+  padding: 5px 100px;
+  color: white !important;
+  position: relative;
+  overflow: hidden;
+  z-index: 999;
+  transition: color 0.7s ease-in-out;
+}
+
+.nav-link::before{
+  content: '';
+  position: absolute;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  z-index: -1;
+}
+
+
+.nav-link:hover{
+  color: #f00 !important;
+}
+
+.nav-link:hover::before{
+  width: 100%;
+  background: white;
 }
 
 
@@ -390,6 +419,11 @@ input[type="checkbox"]:checked + label {
   .navbar-brand {
     font-size: 2rem;
   }
+
+  .nav-link{
+    margin: 0;
+  }
+
   .card {
     flex-basis: calc(50% - 20px);
   }
