@@ -2,6 +2,7 @@
 * {
   font-family: "Montserrat";
 }
+
 body::-webkit-scrollbar {
   width: 1.3rem;
 }
@@ -86,7 +87,6 @@ body::-webkit-scrollbar-thumb {
   font-family: "Ubuntu";
   font-weight: bold;
   font-size: 3.5rem;
-  
   line-height: 1.5;
 }
 .section-heading-h2 {
