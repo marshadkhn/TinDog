@@ -101,7 +101,7 @@ body::-webkit-scrollbar-thumb {
 #features h3 {
   font-family: "Ubuntu";
   /* font-weight: bolder; */
-  font-size: 1.9rem;
+  font-size: 1.8rem;
 }
 #features p {
   font-weight: bold;
@@ -380,7 +380,6 @@ input[type="checkbox"]:checked + label {
 #footer a:hover {
   color: white;
 }
-
 
 /* Media Queries for different screen size */
 @media (max-width: 991px) {
