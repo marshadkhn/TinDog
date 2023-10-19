@@ -13,6 +13,18 @@
         crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/8f921ffb0a.js" crossorigin="anonymous"></script>
 
+
+    <style>
+        /* Add this CSS to adjust the button position */
+        .carousel-control-prev,
+        .carousel-control-next {
+            margin-right: -130px;
+            /* Adjust this value to control how much the buttons extend outside */
+            margin-left: -130px;
+            /* Adjust this value to control how much the buttons extend outside */
+        }
+    </style>
+
 </head>
 
 <body>
@@ -94,13 +106,13 @@
 
 
     <!-- Testimonials -->
+
     <section id="testimonials">
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <h2 class="test">I no longer have to sniff other dogs for love. I've found the hottest Corgi on
-                        TinDog. Woof.
-                    </h2>
+                        TinDog. Woof.</h2>
                     <img class="testimonials-image" src="images/dog-img.jpg" alt="dog-profile">
                     <em class="em">Pebbles, New York</em>
                 </div>
@@ -110,8 +122,8 @@
                     <img class="testimonials-image" src="images/lady-img.jpg" alt="lady-profile">
                     <em class="em">Beverly, Illinois</em>
                 </div>
-
             </div>
+
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                 data-bs-slide="prev">
                 <i class="fa-solid fa-angle-left"></i>
@@ -119,22 +131,14 @@
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
                 data-bs-slide="next">
                 <i class="fa-solid fa-angle-right"></i>
-
             </button>
         </div>
-    </section>
-
-    <section id="press">
-        <img src="images/tnw.png" alt="tnw-logo">
-        <img src="images/bizinsider.png" alt="biz-insider-logo">
-        <img src="images/mashable.png" alt="mashable-logo">
-
     </section>
 
 
 
     <!-- Press -->
-    <!-- <section id="press">
+    <section id="press">
         <div class="container py-4">
             <div class="row">
                 <div class="col text-center">
@@ -144,7 +148,7 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
 
     <!-- Pricing -->
@@ -217,10 +221,10 @@
     <section class="contact" id="contact">
         <div class="container">
             <div class="row">
-                <h1>Contact us</h1>
-            </div>
-            <div class="row">
-                <h4 style="text-align:center">We'd love to hear from you!</h4>
+                <div class="col-12">
+                    <h1>Contact us</h1>
+                    <p class="text-center text-secondary">We'd love to hear from you!</p>
+                </div>
             </div>
             <div class="row input-container">
                 <div class="col-xs-12">
@@ -260,6 +264,7 @@
 
 
     </section>
+
     <footer id="footer">
         <div class="container">
             <div class="row">
