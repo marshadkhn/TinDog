@@ -9,6 +9,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Montserrat";
+    
 }
 
 body::-webkit-scrollbar {
@@ -364,7 +365,7 @@ p {
     margin: 10% 0;
 }
 
-#cta {
+/* #cta {
     text-align: center;
     background-color: #ff4c68;
     padding: 10%;
@@ -384,8 +385,61 @@ p {
 
 #cta btn-outline-light {
     margin-right: 4px;
+} */
+/* ///////////////////////////////// */
+ #section-b {
+    padding: 2em 1em 1em 1em;
+    text-align: center;
+    
+    margin: 0 20px;
+    background-color: #f97286;
+    border: #fff;
+    margin-top: 1em;
+}
+/*
+#section-b ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
+#section-b li {
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333;
+}
+
+#section-b .newup-content {
+    padding: 1.5em;
+} */
+/* ////////////////// */
+
+#section-b ul {
+    list-style: none;
+    padding: 0;
+    white-space: nowrap; 
+    overflow-x: auto;    
+    margin: 2px;
+}
+
+#section-b li {
+    display: inline-block;
+    margin-right: 1px; 
+    vertical-align: top; 
+}
+.newup a {
+    color: rgb(0, 100, 0);
+}
+/* .newup {
+    text-align: center;
+} */
+
+#section-b img {
+    max-width: 450px; /* Adjust this value to your preference */
+    height: auto;
+}
+
+/* /////////////////////// */
 button.btn-dark:hover {
     background-color: #3e3c3c;
 }
