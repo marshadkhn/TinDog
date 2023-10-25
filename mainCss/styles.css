@@ -60,11 +60,7 @@ body::-webkit-scrollbar-thumb {
   padding-bottom: 4.5rem;
 }
 
-.navbar-brand {
-  font-family: "Ubuntu";
-  font-size: 3rem;
-  font-weight: bold;
-}
+
 
 .nav-item {
   padding: 0 18px;
@@ -356,7 +352,7 @@ textarea {
 }
 
 .submit-btn {
-  float: right;
+  float: none;
   padding: 7px 35px;
   border-radius: 60px;
   display: inline-block;
