@@ -1,7 +1,7 @@
 
 <b><h1 style="text-align: center;">TinDog</h1></b>
 
-# Programs in which participanted
+# Programs in which participated
 1. **Hacktoberfest 2023**  
 <br>
 
