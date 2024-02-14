@@ -17,7 +17,7 @@ You can refer to the following articles on **basics of Git and Github and also c
 * [How to create pull request](https://opensource.com/article/19/7/create-pull-request-github).
 * [Getting started with Git and Github](https://www.youtube.com/watch?v=apGV9Kg7ics&t=1878s).
 
- ## :memo: How to contribute?
+ ## :memo: How to contribute Here?
  * Go through the repository completely!
  * Take a look at the Existing Issues or create your own Issues!
  * Wait for the Issue to be assigned to you after which you can start working on it.
